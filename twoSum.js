@@ -16,4 +16,8 @@ const twoSum = (nums, target) => {
     return output;
 };
 
-console.log(twoSum([2, 7, 11, -2], 9));
+// Originally had: if (numsHash[counterPart] && numsHash[counterPart] !== i) {
+    // doesn't work because 0 is falsey in JS
+    // be careful about using existence in logical checks
+
+console.log(twoSum([2, 7], 9));
